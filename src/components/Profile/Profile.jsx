@@ -1,4 +1,9 @@
-<div class="profile">
+import PropTypes from "prop-types";
+import css from './Profile.module.css';
+
+const Profile = ({username, tag, location, avata, stats}) => {
+  return (
+<div className="profile">
   <div class="description">
     <img
       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
@@ -25,3 +30,5 @@
     </li>
   </ul>
 </div>
+  )
+}
