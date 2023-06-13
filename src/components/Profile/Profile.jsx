@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from 'react';
 
 export const Profile = ({username, tag, location, avatar, stats}) => {
-
+return (
 <div className={css.profile}>
   <div class={css.description}>
     <img
@@ -31,7 +31,8 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
     </li>
   </ul>
 </div>
-}
+)
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
