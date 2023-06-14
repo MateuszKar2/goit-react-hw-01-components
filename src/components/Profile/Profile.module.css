@@ -1,13 +1,14 @@
 .profile {
- background-color: aqua;
+
 }
 
 .description {
-background-color: red;
+
 }
 
 .avatar {
-
+width: 300px;
+height: 300px;
 }
 
 .tag {
@@ -23,7 +24,7 @@ background-color: red;
 }
 
 .stats {
-
+display: flex;
 }
 
 .label {
@@ -31,5 +32,5 @@ background-color: red;
 }
 
 .quantity {
-
+display: flex;
 }
