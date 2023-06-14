@@ -2,7 +2,7 @@ import { Profile } from './Profile/Profile';
 // import { Statistics } from './Statistic/Statistics';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-import { Statistics } from './Statistic/Statistics';
+
 
 
 export const App = () => {
