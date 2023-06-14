@@ -1,10 +1,12 @@
 import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistic/Statistics';
+// import { Statistics } from './Statistic/Statistics';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Statistics } from './Statistic/Statistics';
 
 
 export const App = () => {
+  return (
   <div
       style={{
         height: '100vh',
@@ -16,8 +18,9 @@ export const App = () => {
       }}
     >
       <Profile title=""/>
-      <Statistics title="Upload stats"/>
+      {/* <Statistics title=""/> */}
       <FriendList title=""/>
       <TransactionHistory title=""/>
     </div>
+  );
 };
