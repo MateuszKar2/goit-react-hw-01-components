@@ -4,7 +4,7 @@ import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 import user from '../data/user.json';
-import user from '../data/data.json';
+import data from '../data/data.json';
 // import { FC } from 'react';
 // import { FC } from 'react';
 
