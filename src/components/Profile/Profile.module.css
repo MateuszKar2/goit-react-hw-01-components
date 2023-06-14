@@ -1,8 +1,10 @@
 .profile {
     margin: 100px;
-    width: 400px;
-    height: 600px;
-    background-color: aqua;
+    width: 300px;
+    height: 545px;
+    background-color: whitesmoke;
+    border: 2px solid gray;
+    border-radius: 2px;
 }
 
 .description {
@@ -11,12 +13,11 @@
 
 .avatar {
    border-radius: 50%;
-   background-color: lightsalmon;
+   background-color: white;
    width: 200px;
    height: 200px;
-   margin-left: 100px;
+   margin-left: 50px;
    margin-bottom: 50px;
-
 }
 
 .name {
@@ -33,26 +34,35 @@
     color: gray;
 }
 
-
 .location {
     composes: name;
     font-size: 20px;
     color: gray;
 }
 
-.stats li {
-    width: 400px / 3;
-    height: 100px;
+.stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0; 
+    background-color: lightgray;
 }
 
-.stats {
+.stats li {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 20px; 
 }
 
 .label {
-
+    color: gray;
+    padding-top: 20px; 
 }
 
 .quantity {
-display: flex;
+    font-weight: 600;
 }
