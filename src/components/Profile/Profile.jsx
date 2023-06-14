@@ -5,29 +5,29 @@ import React from 'react';
 export const Profile = ({username, tag, location, avatar, stats}) => {
 return (
 <div className={css.profile}>
-  <div class={css.description}>
+  <div className={css.description}>
     <img
       src={avatar}
       alt={username}
-      class={css.avatar}
+      className={css.avatar}
     />
-    <p class={css.name}>Petra Marica</p>
-    <p class={css.tag}>@pmarica</p>
-    <p class={css.location}>Salvador, Brasil</p>
+    <p className={css.name}>{username}</p>
+    <p className={css.tag}>@ {tag}</p>
+    <p className={css.location}>{location}</p>
   </div>
 
-  <ul class={css.stats}>
+  <ul className={css.stats}>
     <li>
-      <span class={css.label}>Followers</span>
-      <span class={css.quantity}>1000</span>
+      <span className={css.label}>Followers: </span>
+      <span className={css.quantity}>{stats.followers}</span>
     </li>
     <li>
-      <span class={css.label}>Views</span>
-      <span class={css.quantity}>2000</span>
+      <span className={css.label}>Views: </span>
+      <span className={css.quantity}>{stats.views}</span>
     </li>
     <li>
-      <span class={css.label}>Likes</span>
-      <span class={css.quantity}>3000</span>
+      <span className={css.label}>Likes: </span>
+      <span className={css.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
@@ -35,9 +35,13 @@ return (
 };
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  quantity: PropTypes.object.isRequired, 
+  avatar: PropTypes.string,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    quantity: PropTypes.number,
+  }),
 };
