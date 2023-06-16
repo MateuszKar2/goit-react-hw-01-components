@@ -9,17 +9,17 @@ export const FriendList = ({ friends }) => {
         avatar={avatar}
         name={name}
         isOnline={isOnline}
-        id={id}
+        key={id}
         />        
     ))}
     </ul> 
 };
 
 FriendList.prototype = {
-    friends: PropTypes.shape({
+    friends: PropTypes.arrayOf(PropTypes.shape({
         avatar: PropTypes.string,
         name: PropTypes.string,
         isOnline: PropTypes.bool,
         id: PropTypes.number,
-    }),
+    })),
 };
