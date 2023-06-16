@@ -1,9 +1,17 @@
 .friendList {
-    background-color: aqua;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .item {
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 5px;
+   
 }
 
 .status {
@@ -11,13 +19,14 @@
 }
 
 .online {
-
+    
 }
 
 .avatar {
-
+ width: 100px;
+ height: 100px;
 }
 
 .name {
-
+  font-size: 35px;
 }
