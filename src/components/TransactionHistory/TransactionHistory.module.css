@@ -1,0 +1,23 @@
+.transactionHistory {
+margin: 150px;
+width: 700px;
+height: 500px;
+
+}
+
+.transaction {
+    background-color: gray;
+    width: 100px;
+    height: 40px;
+   
+}
+
+.trTitle {
+ background-color: blue;
+    
+}
+
+th {
+    text-transform: uppercase;
+
+}
